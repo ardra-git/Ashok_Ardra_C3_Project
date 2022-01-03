@@ -59,6 +59,14 @@ public class Restaurant {
 
         menu.remove(itemToBeRemoved);
     }
+     public int getOrderValue(List<Item> item){
+        int totCost=0;
+        for(Item order : item) {
+            totCost += order.getPrice();
+        }
+        return totCost;
+
+    }
     public void displayDetails(){
         System.out.println("Restaurant:"+ name + "\n"
                 +"Location:"+ location + "\n"
