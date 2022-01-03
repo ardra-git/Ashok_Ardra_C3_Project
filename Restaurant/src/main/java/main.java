@@ -12,6 +12,8 @@ public class main {
     res.addToMenu("Chicken", Integer.parseInt("100"));
     res.addToMenu("Mutton", Integer.parseInt("200"));
     res.getMenu();
+
+
     res.displayDetails();
    // System.out.println(res.findItemByName("Beef"));
    // System.out.println(res.findItemByName("Mutton"));
@@ -25,7 +27,7 @@ public class main {
         System.out.println(res1.findRestaurantByName("Dominos").getName());
         System.out.println(res1.getRestaurants());
 
-
+System.out.println(res.getOrderValue(res.getMenu()));
 
     }
 }
